@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.stopwatch-container {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    min-width: 350px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+.display {
+    background: #f0f0f0;
+    padding: 30px;
+    border-radius: 15px;
+    font-size: 4em;
+    font-weight: bold;
+    color: #667eea;
+    font-family: 'Courier New', monospace;
+    margin-bottom: 30px;
+    letter-spacing: 5px;
+}
+
+.controls {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 12px 30px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-start {
+    background: #4CAF50;
+    color: white;
+}
+
+.btn-start:hover:not(:disabled) {
+    background: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+}
+
+.btn-pause {
+    background: #ff9800;
+    color: white;
+}
+
+.btn-pause:hover:not(:disabled) {
+    background: #e68900;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 152, 0, 0.4);
+}
+
+.btn-pause:disabled {
+    background: #ccc;
+    color: #999;
+    cursor: not-allowed;
+}
+
+.btn-reset {
+    background: #f44336;
+    color: white;
+}
+
+.btn-reset:hover:not(:disabled) {
+    background: #da190b;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(244, 67, 54, 0.4);
+}
+
+.status {
+    margin-top: 20px;
+}
+
+#statusMsg {
+    color: #667eea;
+    font-size: 1.1em;
+    font-weight: 600;
+    min-height: 30px;
+}
